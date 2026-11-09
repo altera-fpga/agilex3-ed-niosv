@@ -1,6 +1,6 @@
-# Nios� V/g Iperf System Example Design
+# Nios® V/g Iperf System Example Design
  
-This design demonstrates the Iperf application on a Nios� V/g processor using the Triple Speed Ethernet IP for the Atum A3 Nano FPGA board.
+This design demonstrates the Iperf application on a Nios® V/g processor using the Triple Speed Ethernet IP for the Atum A3 Nano FPGA board.
  
 ## Description
  
@@ -63,7 +63,7 @@ Note : Any modification to the Design, Software stack or Infra will lead to a di
  
 ## Project Details
  
-- **Title**: Nios� V/g Iperf System Example Design
+- **Title**: Nios® V/g Iperf System Example Design
 - **Source**: Github
 - **Design Support**: CTH
 - **Family**: Agilex 3
@@ -126,8 +126,8 @@ b. Using build_sof.py to compile the design
 - Invoke the quartus_py shell in the terminal
  
 - Run the following command in the terminal from top level project directory:
+
 ```
-cd sources
 cp custom_logic/core_sdram_axi/LICENSE.txt   ./hw
 cp custom_logic/core_sdram_axi/core_sdram_axi4_hw.tcl   ./hw
 cp custom_logic/core_sdram_axi/sdram_axi_core.v ./hw
@@ -145,8 +145,8 @@ c. Creating the bsp, build software sources and download elf
 
 - Clean the app build project before regenerating elf
 
- 
 ```     
+niosv-shell
 niosv-bsp --create --no-default --system=./hw/src/vds/qsys_top/qsys_top.vds --quartus_project=./hw/top.qpf --type=freertos -cmd="enable_sw_package altera_freertos_tcpip" ./sw/bsp_freertos/settings.bsp --script=./sw/bsp_settings.tcl
 niosv-app --bsp-dir=sw/bsp_freertos --app-dir=sw/app_freertos --srcs=sw/app_freertos/main.c,sw/app_freertos/msgdma_driver.c,sw/app_freertos/tse_driver.c,sw/app_freertos/NetworkInterface.c,sw/app_freertos/msgdma_driver.h,sw/app_freertos/tse_driver.h
 ```
