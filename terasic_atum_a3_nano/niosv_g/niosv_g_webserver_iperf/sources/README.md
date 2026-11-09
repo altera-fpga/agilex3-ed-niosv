@@ -1,6 +1,6 @@
-# Nios� V/g Iperf System Example Design
+# Nios® V/g Iperf System Example Design
  
-This design demonstrates the Iperf application on a Nios� V/g processor using the Triple Speed Ethernet IP for the Atum A3 Nano FPGA board.
+This design demonstrates the Iperf application on a Nios® V/g processor using the Triple Speed Ethernet IP for the Atum A3 Nano FPGA board.
  
 ## Description
  
@@ -63,7 +63,7 @@ Note : Any modification to the Design, Software stack or Infra will lead to a di
  
 ## Project Details
  
-- **Title**: Nios� V/g Iperf System Example Design
+- **Title**: Nios® V/g Iperf System Example Design
 - **Source**: Github
 - **Design Support**: CTH
 - **Family**: Agilex 3
